@@ -1,0 +1,237 @@
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-1012-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Aug 26 06:04:46 UTC 2024
+
+  System load:  0.16              Processes:             106
+  Usage of /:   22.8% of 6.71GB   Users logged in:       0
+  Memory usage: 21%               IPv4 address for enX0: 172.31.43.58
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+ubuntu@ip-172-31-43-58:~$ ec2-user
+
+root@ip-172-31-43-58:/home/ubuntu# sudo apt-get update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [463 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [323 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [114 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [7192 B]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [337 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [142 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [45.0 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [13.6 kB]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [280 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [54.8 kB]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [14.1 kB]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [3608 B]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [212 B]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [532 B]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [112 B]
+Get:29 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.3 kB]
+Get:30 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [10.5 kB]
+Get:31 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [17.6 kB]
+Get:32 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1016 B]
+Get:33 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:34 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:36 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:37 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [73.1 kB]
+Get:38 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [4220 B]
+Get:39 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [252 kB]
+Get:40 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [109 kB]
+Get:41 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [8632 B]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [9756 B]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [280 kB]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [54.8 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [10.6 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [2808 B]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [344 B]
+Fetched 28.6 MB in 6s (4891 kB/s)               
+Reading package lists... Done
+root@ip-172-31-43-58:/home/ubuntu# sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package docker-ce is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package docker-ce-cli is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'docker-ce' has no installation candidate
+E: Package 'docker-ce-cli' has no installation candidate
+E: Unable to locate package containerd.io
+E: Couldn't find any package by glob 'containerd.io'
+E: Couldn't find any package by regex 'containerd.io'
+E: Unable to locate package docker-buildx-plugin
+E: Unable to locate package docker-compose-plugin
+root@ip-172-31-43-58:/home/ubuntu# sudo apt-get install ca-certificate curl
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package ca-certificate
+root@ip-172-31-43-58:/home/ubuntu# sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring/docker.asc
+curl: (23) Failure writing output to destination
+root@ip-172-31-43-58:/home/ubuntu# sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base pigz runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-buildx docker-compose-v2 docker-doc rinse zfs-fuse | zfsutils
+The following NEW packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base docker.io pigz runc ubuntu-fan
+0 upgraded, 8 newly installed, 0 to remove and 86 not upgraded.
+Need to get 76.8 MB of archives.
+After this operation, 289 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 bridge-utils amd64 1.7.1-1ubuntu2 [33.9 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 runc amd64 1.1.12-0ubuntu3.1 [8599 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 containerd amd64 1.7.12-0ubuntu4.1 [38.6 MB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dns-root-data all 2023112702~willsync1 [4450 B]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dnsmasq-base amd64 2.90-2build2 [375 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 docker.io amd64 24.0.7-0ubuntu4.1 [29.1 MB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 76.8 MB in 1s (69.5 MB/s)      
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 67741 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7.1-1ubuntu2_amd64.deb ...
+Unpacking bridge-utils (1.7.1-1ubuntu2) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.12-0ubuntu3.1_amd64.deb ...
+Unpacking runc (1.1.12-0ubuntu3.1) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.12-0ubuntu4.1_amd64.deb ...
+Unpacking containerd (1.7.12-0ubuntu4.1) ...
+Selecting previously unselected package dns-root-data.
+Preparing to unpack .../4-dns-root-data_2023112702~willsync1_all.deb ...
+Unpacking dns-root-data (2023112702~willsync1) ...
+Selecting previously unselected package dnsmasq-base.
+Preparing to unpack .../5-dnsmasq-base_2.90-2build2_amd64.deb ...
+Unpacking dnsmasq-base (2.90-2build2) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../6-docker.io_24.0.7-0ubuntu4.1_amd64.deb ...
+Unpacking docker.io (24.0.7-0ubuntu4.1) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../7-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up dnsmasq-base (2.90-2build2) ...
+Setting up runc (1.1.12-0ubuntu3.1) ...
+Setting up dns-root-data (2023112702~willsync1) ...
+Setting up bridge-utils (1.7.1-1ubuntu2) ...
+Setting up pigz (2.8-1) ...
+Setting up containerd (1.7.12-0ubuntu4.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /usr/lib/systemd/system/ubuntu-fan.service.
+Setting up docker.io (24.0.7-0ubuntu4.1) ...
+info: Selecting GID from range 100 to 999 ...
+info: Adding group `docker' (GID 113) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for dbus (1.14.10-4ubuntu4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                                                            
+Scanning linux images...                                                                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-43-58:/home/ubuntu# sudo snap install docker
+docker 24.0.5 from Canonical✓ installed
+root@ip-172-31-43-58:/home/ubuntu# docker --version
+Docker version 24.0.7, build 24.0.7-0ubuntu4.1
+root@ip-172-31-43-58:/home/ubuntu# docker pull centos
+Using default tag: latest
+latest: Pulling from library/centos
+a1d0c7532777: Pull complete 
+Digest: sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
+Status: Downloaded newer image for centos:latest
+docker.io/library/centos:latest
+root@ip-172-31-43-58:/home/ubuntu# docker run -d -t --name iceandfire centos
+f85cb701919118c961ff7aad2f0cdd577ceb49dfc986f8e7f19bed1f82383676
+root@ip-172-31-43-58:/home/ubuntu# docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+f85cb7019191   centos    "/bin/bash"   30 seconds ago   Up 28 seconds             iceandfire
+root@ip-172-31-43-58:/home/ubuntu# ^C
+root@ip-172-31-43-58:/home/ubuntu# docker pull kali linux
+"docker pull" requires exactly 1 argument.
+See 'docker pull --help'.
+
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Download an image from a registry
+root@ip-172-31-43-58:/home/ubuntu# docker pull thenetworkchuck/nccoffee:frenchpress
+frenchpress: Pulling from thenetworkchuck/nccoffee
+6ae821421a7d: Pull complete 
+da4474e5966c: Pull complete 
+eb2aec2b9c9f: Pull complete 
+343e90584ca2: Pull complete 
+Digest: sha256:0b815452de6265ae6a695501856d239da2f085fecbaf74b91ad181f13adbb529
+Status: Downloaded newer image for thenetworkchuck/nccoffee:frenchpress
+docker.io/thenetworkchuck/nccoffee:frenchpress
+root@ip-172-31-43-58:/home/ubuntu# docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+f85cb7019191   centos    "/bin/bash"   14 minutes ago   Up 14 minutes             iceandfire
+root@ip-172-31-43-58:/home/ubuntu# 
+
+root@ip-172-31-43-58:/home/ubuntu# docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+f85cb7019191   centos    "/bin/bash"   30 seconds ago   Up 28 seconds             iceandfire
+root@ip-172-31-43-58:/home/ubuntu# ^C
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT   MEM %     NET I/O       BLOCK I/O     PIDS
+f85cb7019191   iceandfire   0.00%     928KiB / 957.4MiB   0.09%     1.09kB / 0B   8.19kB / 0B   1
+^C
+root@ip-172-31-43-58:/home/ubuntu# ^C
+root@ip-172-31-43-58:/home/ubuntu# 
